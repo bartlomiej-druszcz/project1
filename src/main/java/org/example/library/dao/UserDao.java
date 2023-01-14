@@ -14,7 +14,7 @@ public class UserDao implements UserProvider {
     @Override
     public Optional<User> findUserByLogin(String login) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        Query<User> query = session.createQuery(SEARCH_BY_LOGIN_QUERY,User.class)
+        Query<User> query = session.createQuery(SEARCH_BY_LOGIN_QUERY, User.class)
                 .setParameter("login", login);
         Optional<User> user = query.getResultList().stream().findFirst();
         session.close();
