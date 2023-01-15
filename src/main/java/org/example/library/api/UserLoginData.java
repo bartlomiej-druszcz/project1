@@ -9,5 +9,4 @@ public class UserLoginData {
 
     private String login;
     private String password;
-
 }

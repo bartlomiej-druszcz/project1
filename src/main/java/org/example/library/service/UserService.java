@@ -23,5 +23,4 @@ public class UserService implements UserLoginChecker {
     private boolean checkPassword(User user, UserLoginData userLoginData) {
         return user.getPassword().equals(userLoginData.getPassword());
     }
-
 }

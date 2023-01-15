@@ -6,10 +6,10 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.service.ServiceRegistry;
 
-
 public class HibernateUtil {
 
     private static final SessionFactory SESSION_FACTORY = buildSessionFactory();
+
     private static SessionFactory buildSessionFactory() {
         try {
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()

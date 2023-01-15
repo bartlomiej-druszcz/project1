@@ -20,5 +20,4 @@ public class UserDao implements UserProvider {
         session.close();
         return user;
     }
-
 }

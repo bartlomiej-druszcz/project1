@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class UserServiceTest {
 
-    private final static User EXISTING_USER = new User(1, "existingLogin", "password", "name");
+    private final static User EXISTING_USER = new User(1, "existingLogin", "password", "name", "email", null, null);
 
     /*private final UserService userService = new UserService(
             login -> Optional.of(existingUser)

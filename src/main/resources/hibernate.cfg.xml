@@ -14,6 +14,12 @@
         <property name="hbm2ddl.auto">update</property>
 
         <mapping class="org.example.library.model.User"/>
+        <mapping class="org.example.library.model.Address"/>
+        <mapping class="org.example.library.model.Role"/>
+        <mapping class="org.example.library.model.Category"/>
+        <mapping class="org.example.library.model.Author"/>
+        <mapping class="org.example.library.model.Book"/>
+        <mapping class="org.example.library.model.Rental"/>
 
     </session-factory>
 </hibernate-configuration>

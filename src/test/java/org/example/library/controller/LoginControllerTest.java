@@ -16,7 +16,7 @@ class LoginControllerTest {
 
     LoginController loginController = new LoginController(
             new UserService(
-                    login -> Optional.of(new User(1, "login", "password", "name"))
+                    login -> Optional.of(new User(1, "login", "password", "name", "email", null, null))
             )
     );
 
