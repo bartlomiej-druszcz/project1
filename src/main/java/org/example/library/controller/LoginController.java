@@ -1,5 +1,6 @@
 package org.example.library.controller;
 
+import org.example.library.ApplicationContext;
 import org.example.library.api.UserLoginData;
 import org.example.library.dao.UserDao;
 import org.example.library.model.User;
@@ -26,6 +27,7 @@ public class LoginController {
     public View login(UserLoginData userLoginData) {
         Optional<User> user = userLoginChecker.checkAndGet(userLoginData);
         if (user.isPresent()) {
+            ApplicationContext.setActiveUser(user.get());
             return new MainMenuView();
         }
         return new LoginView(Optional.of("Podano niepoprawne dane logowania"));
